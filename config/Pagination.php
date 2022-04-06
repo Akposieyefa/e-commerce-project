@@ -2,7 +2,7 @@
 namespace app\config;
 
 /**
- * 
+ * class Pagination
  */
 class Pagination
 {
@@ -106,6 +106,7 @@ class Pagination
 
     }
 
+    // Total number of products returned on each pagination.
     public function products_results($per_page,$page)
     {
             

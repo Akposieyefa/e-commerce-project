@@ -49,6 +49,7 @@ class Cart extends Cart_m
 		return $this->cart_details();
 	}
 
+	// display country on checkout page.
 	public function load_country($value='')
 	{
 		return $this->load_countries();
@@ -59,6 +60,7 @@ class Cart extends Cart_m
 		return $this->place_orders($value);
 	}
 
+	// function to place order and create user account with checkout details.
 	public function place_order_acct($cust_id='',$value='')
 	{
 		return $this->place_order_accts($cust_id,$value);

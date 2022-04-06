@@ -1,13 +1,17 @@
 <?php
 require_once("../config/initialize.php");
 
+/* Include neccessary classes for these file */
+
 use app\config\Connection;
 use app\config\Session;
 use app\classes\Cart;
 use app\classes\Customers;
 
+/* Intantiating session class */
 $session = new Session();
 
+/* Store $_POST/$_GET/$_REQUEST on $param variable */
 $param = (isset($_REQUEST['action'])) ? $_REQUEST['action'] : '' ;
 
 if(isset($_POST['product_id'])){
@@ -28,6 +32,8 @@ if(isset($_POST['product_id'])){
 		}
 	}
 }
+
+/* This lines of code handles all cart ajax calls */
 
 if(!empty($_SESSION["shopping_cart"])){
 	

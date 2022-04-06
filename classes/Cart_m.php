@@ -374,6 +374,7 @@ class Cart_m
         }
     }
 
+    // function to place order and create user account with checkout details
     public function place_order_accts($cust_id='',$value='')
     {
         $functions = new Functions();

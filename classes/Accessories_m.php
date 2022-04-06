@@ -2,16 +2,19 @@
 namespace app\classes;
 
 /**
- * 
+ *  Class Accessories_m
  */
+// This class object handle related function for product accessories.
 
 class Accessories_m 
 {
+    // A class variable, with the slug name.
 	public $slug = 'accessories';
 
-	public function list_men_subcategories($slug=FALSE)
+	// create a function to men subcategory wears
+    public function list_men_subcategories($slug=FALSE)
 	{
-		
+		// returns the category Id of a product.
 		$catid = $this->getCategoryID($slug);
 
 		$stmt = $this->pdo->preparedStatement("SELECT * FROM `subcategory` WHERE `categoryID`='$catid->categoryID'");
@@ -20,12 +23,14 @@ class Accessories_m
 		return $subcategories;
 	}
 
+    // a function that will return categoryID.
 	public function getCategoryID($catSlug)
 	{
 		$stmt = $this->pdo->preparedStatement("SELECT `categoryID` FROM `categories` WHERE `categorySlug`=?", $catSlug);
 		return $stmt->fetch();
 	}
 
+    // a function that will return categoryID.
 	public function getSubCategoryID($subcatSlug)
 	{
 		$stmt = $this->pdo->preparedStatement("SELECT `subCategoryID` FROM `subcategory` WHERE `subcategorySlug`=?", $subcatSlug);
@@ -41,6 +46,7 @@ class Accessories_m
 		return $stmt->fetchAll();
 	}
 
+    // a function that will get a products according to its subcategory.
 	public function get_category_products_results($slug,$args=NULL)
 	{
 		$subcatid = $this->getSubCategoryID([$slug]);

@@ -38,16 +38,19 @@ class Admin_m
         }  
 	}
 
+	// display info box on dashboard.
 	public function order_count($value='')
 	{
 		return $this->pdo->rowCount("SELECT * FROM orders");
 	}
 
+	// display info box on dashboard.
 	public function product_count($value='')
 	{
 		return $this->pdo->rowCount("SELECT * FROM products");
 	}
 
+	// display info box on dashboard.
 	public function customer_count($value='')
 	{
 		return $this->pdo->rowCount("SELECT * FROM customers");
@@ -109,6 +112,7 @@ class Admin_m
 		return true;
 	}
 
+	// check if user email exist before loggin.
 	public function check_email_exists($email)
     {
         $stmt = $this->pdo->numberOfRows("SELECT count(*) FROM admins WHERE user_email='$email'");

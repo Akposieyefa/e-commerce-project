@@ -9,7 +9,7 @@ use app\config\Functions;
 class Shop_m 
 {
 	
-
+	// function to get product color.
 	public function colors($slug)
 	{
 		$productID = $this->get_shop($slug)->productID;
@@ -21,6 +21,7 @@ class Shop_m
 
 	/*SELECT cat.categoryName, cat.categorySlug, sub.subCategoryName, sub.subCategorySlug, c.name as color, c.hex, s.name as sizes FROM product_relation r INNER  JOIN categories cat ON r.categoryID = cat.categoryID INNER JOIN subcategory sub ON r.subCategoryID = sub.subCategoryID INNER JOIN colors c ON r.colorID = c.colorId INNER JOIN sizes s ON r.sizeID = s.sizeId WHERE r.productID='1'*/
 
+	// function to get product size
 	public function sizes($slug)
 	{
 		$productID = $this->get_shop($slug)->productID;

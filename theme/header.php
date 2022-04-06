@@ -18,7 +18,7 @@ $session = new Session();
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Cloth_Max Store">
-    <meta name="keywords" content="Cloth_Max, unica, creative, html">
+    <meta name="keywords" content="Cloth_Max, sports, sport wears, joggers">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cloth-Max | Home</title>

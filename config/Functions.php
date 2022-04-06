@@ -3,7 +3,6 @@ namespace app\config;
 /**
  * class Funtions
  *
- * @author BobLewis <boblewisu@gmail.com>
  * @package app\config
  *
  */

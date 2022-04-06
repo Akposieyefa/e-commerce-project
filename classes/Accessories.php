@@ -2,7 +2,7 @@
 namespace app\classes;
 
 /**
- * Class Accessories
+ * Class Accessories extends from accessories_m
  */
 
 class Accessories extends Accessories_m

@@ -1,7 +1,4 @@
-
-
-
-
+ <!-- Side Nav  Section Begin -->
 
 <div class="list-group">
   <a href="/clothmax/pages/profile.php" class="list-group-item 
@@ -28,3 +25,5 @@
   <a href="/clothmax/pages/logout.php" class="list-group-item
   ">Logout</a>
 </div>
+
+<!-- Side Nav  Section Ends -->

@@ -23,16 +23,19 @@ class Admin extends Admin_m
 		return $this->admin_login($value);
 	}
 
+	// display info box on dashboard.
 	public function order_box($value='')
 	{
 		return $this->order_count($value);
 	}
 
+	// display info box on dashboard.
 	public function product_box($value='')
 	{
 		return $this->product_count($value);
 	}
 
+	// display info box on dashboard.
 	public function customer_box($value='')
 	{
 		return $this->customer_count($value);
@@ -53,6 +56,7 @@ class Admin extends Admin_m
 		return $this->logouts($value);
 	}
 
+	// check if user exists before loggin.
 	public function check_email_exist($email='')
 	{
 		if($this->check_email_exists($email)){

@@ -15,6 +15,7 @@ class Session
 		$this->start_session();
 	}
 
+	//create a function to start the session.
 	public function start_session(){
 		return session_start();
 	}
