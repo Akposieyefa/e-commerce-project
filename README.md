@@ -9,9 +9,10 @@ The purpose of this repository it's for education and test. But the code it's be
 
 ## Setup:
 
-1. Create a new database `clothmax_db` in MySQL.
-2. Run the SQL query in `sql/clothmax_db.sql`.
-3. Open the file `config/Connection.php` and change the Server name, Username, Password and Database name (Optional).
+1. git clone https://github.com/Akposieyefa/e-commerce-project.git or download as zip.
+2. Create a new database `clothmax_db` in MySQL.
+3. Run the SQL query in `sql/clothmax_db.sql`.
+4. Open the file `config/Connection.php` and change the Server name, Username, Password and Database name (Optional).
 
 Demo Admin - email: 'admin@clothmax.com' pass - '12345'.
 
